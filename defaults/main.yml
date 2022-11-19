@@ -1,0 +1,4 @@
+---
+# defaults file for ansible-role-mc
+minio_client_install_folder: "/usr/local/bin"
+minio_client_download_url: "https://dl.min.io/client/mc/release/linux-amd64/mc"

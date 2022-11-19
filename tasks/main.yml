@@ -1,0 +1,9 @@
+---
+# tasks file for ansible-role-mc
+- name: Install minio client
+  ansible.builtin.get_url: 
+    url: "{{ minio_client_download_url }}"
+    dest: "{{ minio_client_install_folder }}/mc"
+    owner: root
+    group: root
+    mode: 0755
